@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>A read on where AI fits in Gheorg's stack, and where it doesn't. | Prepared for Gheorg</title>
+  <meta name="description" content="Congrats on the Top 100 at eMerge. Saw the APA Seal on the homepage and the Florida HQ move last year. A hypothesis about where content review slows the US push." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="https://www.gheorg.com" target="_blank" rel="noopener" class="logo-link" aria-label="Gheorg homepage">
+        <img src="logo.png" alt="Gheorg logo" class="logo" />
+      </a>
+      <span class="prepared-for">Prepared for Gheorg</span>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-shape" aria-hidden="true"></div>
+      <div class="container hero-inner">
+        <span class="eyebrow">A note for Dr Metcalf and Dana Klein</span>
+        <h1>A read on where AI actually fits in Gheorg's stack, and where it doesn't.</h1>
+        <p class="hero-sub">Booth SS24 at eMerge Americas 2026. Thirty minutes on the calendar is the easiest next step.</p>
+        <div class="trust-row">
+          <span class="trust-chip"><span class="dot" style="background:var(--teal)"></span> APA Seal of Acceptance</span>
+          <span class="trust-chip"><span class="dot" style="background:var(--coral)"></span> 14,000 families</span>
+          <span class="trust-chip"><span class="dot" style="background:var(--navy)"></span> Top 100 at eMerge 2026</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container narrow">
+        <h2>Opening</h2>
+        <p>Gheorg launched in 2020 out of Sydney with a clear idea: put three of the best-evidenced therapy approaches (ACT, CBT, positive psychology) in front of kids in short daily doses, with a robot that makes the experience feel safe. Five years in, that idea has the APA Seal of Acceptance, 14,000 families, a US headquarters in Florida, and a Top 100 spot at eMerge Americas 2026.</p>
+        <p>The next twelve months look different from the first five. Schools, pediatric clinics, and health plans want answers to questions that parents never ask: data governance, outcomes evidence, where AI lives in the product, who reviews new content, how fast new modules can ship without diluting the clinical integrity that got you the APA Seal in the first place.</p>
+      </div>
+    </section>
+
+    <section class="section section-tint">
+      <div class="container narrow">
+        <h2>The frame</h2>
+        <p>A quick way to think about Gheorg's stack. Roughly 60% of the work underneath the app (content management, subscription plumbing, parent progress views, HSA/FSA workflows, school-district licensing) is traditional code and database work. Roughly 30% is rule-based logic (check-in scoring, escalation triggers, content pacing). Roughly 10% is genuinely AI work (personalisation of exercise selection, early-warning signal detection, language adaptation).</p>
+        <p>Most small teams shipping into regulated spaces waste budget putting LLMs where Postgres would do the job faster, cheaper, and with better review trails. The more useful question is where the review bottleneck sits, and what belongs on which layer.</p>
+
+        <div class="stack-grid">
+          <div class="stack-card">
+            <div class="stack-pct" style="color:var(--navy)">60%</div>
+            <div class="stack-label">Traditional code &amp; database</div>
+            <p class="stack-note">Content CMS, subscriptions, parent views, HSA/FSA plumbing, school-district licensing.</p>
+          </div>
+          <div class="stack-card">
+            <div class="stack-pct" style="color:var(--teal)">30%</div>
+            <div class="stack-label">Rule-based logic</div>
+            <p class="stack-note">Check-in scoring, escalation triggers, content pacing, module sequencing.</p>
+          </div>
+          <div class="stack-card">
+            <div class="stack-pct" style="color:var(--coral)">10%</div>
+            <div class="stack-label">Genuine AI work</div>
+            <p class="stack-note">Personalised exercise selection, early-warning signals, language adaptation.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container narrow">
+        <h2>The relevant case study</h2>
+        <p>Feeld, a product company with a sensitive user population and a small team, ran a scoped sprint with Eduba: a workshop with the leadership team, advisory calls, an Organizational Context Architecture, and a Strategic Operations Framework. The deliverable was not a tool. It was a map of how decisions and content should flow inside the company, so the CTO could add features without rewriting the operating model each time.</p>
+        <p>Gheorg sits in the same shape.</p>
+      </div>
+    </section>
+
+    <section class="section section-tint">
+      <div class="container narrow">
+        <h2>The relevant paper</h2>
+        <p>Children's mental-health products live on the regulated side of the AI line. The <strong>Ethics Engine</strong>, a psychometric assessment tool for evaluating ideological and moral patterns in LLMs, gives Gheorg a framework for evaluating AI behaviour in a clinically-adjacent product. That is the question health systems will ask in year two.</p>
+        <p class="link-row">
+          <a href="https://arxiv.org/abs/2510.11742" target="_blank" rel="noopener">arxiv.org/abs/2510.11742</a>
+          <span class="sep">&middot;</span>
+          <a href="https://github.com/RinDig/AuditEngine" target="_blank" rel="noopener">github.com/RinDig/AuditEngine</a>
+        </p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container narrow">
+        <h2>Credibility line</h2>
+        <p>Jake also built an online community to 22,000 members in five weeks.</p>
+
+        <h2 class="mt-lg">The partnership note</h2>
+        <p>Eduba partners with NLP Logix for work that sits below the orchestration layer. NLP Logix has been in machine learning since 2011 and runs over 150 data scientists. If parts of the Gheorg roadmap need production ML engineering or data platform work, that path is available.</p>
+      </div>
+    </section>
+
+    <section class="section cta-section">
+      <div class="container narrow">
+        <div class="cta-card">
+          <h2>30 minutes with Matt</h2>
+          <p>Thirty minutes on a call with Matt Creamer, Eduba's CRO. Bring one content-review or partnership bottleneck. We will walk through where it lives on the stack and what the fix would look like.</p>
+          <a class="btn-primary" href="https://calendly.com/thecro-eduba/30min" target="_blank" rel="noopener">Book a 30-minute call</a>
+          <p class="cta-meta">Or find us at booth SS24 during eMerge Americas 2026.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <span>Prepared by Eduba &middot; <a href="https://eduba.io" target="_blank" rel="noopener">eduba.io</a></span>
+      <span class="footer-meta">Matt Creamer, CRO &middot; <a href="https://calendly.com/thecro-eduba/30min" target="_blank" rel="noopener">Book a call</a></span>
+    </div>
+  </footer>
+</body>
+</html>
